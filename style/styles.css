@@ -1,0 +1,338 @@
+/* Common Styles */
+
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura consistencia en las dimensiones */
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif; /* Fuente global */
+}
+
+/* Contenedor principal */
+.container {
+    background-color: none;
+}
+
+
+
+
+/* Google Style */
+/* Barra de navegación */
+.container-nav_bar1 {
+    display: flex;
+    flex-direction: row;
+    white-space: normal;
+    justify-content: end;
+    align-items: baseline; /* Asegura que todos los hijos ocupen la misma altura */
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    height: 2.99rem;
+    border: 0px solid #1A73E8; /* Blue */
+}
+.container-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    width: 100%;
+    height: 100%;
+
+    padding-top: 0rem;
+    padding-right: 1.5rem;
+    padding-bottom: 10rem;
+    padding-left: 1.5rem;
+
+    margin-top: 8.2rem;
+
+    border: 0px dashed #EA4335; /* Red */
+}
+
+/* Campos de entrada */
+.input-google {
+    all: unset;
+    box-sizing: border-box;
+    font-family: inherit;
+
+    text-align: start;
+
+    width: 100%;
+    max-width: 36rem;
+    min-height: 3rem;
+    height: 3rem;
+    border-radius: 24px;
+
+    padding: 0 1rem;
+
+    box-shadow: 0 1.5px 8px #D3D3D3; /* Gray */
+
+    font-size: 1rem;
+
+    border: 1px solid #E3E4E8; /* Gray */
+}
+
+.input-google:focus {
+    box-shadow: 0 1.5px 8px #D3D3D3; /* Sombra en los 4 lados */
+    outline: none;
+    border-color: #E3E4E8; /* Mantener el borde gris */
+}
+
+.buttons-group {
+    display: flex;
+    justify-content: center;
+
+    gap: 12px;
+    margin-top: 2rem;
+
+}
+
+/* Estilo para los botones */
+input[type="submit"] {
+    all: unset;
+    padding: 0.55rem 1rem; /* Espaciado en los botones */
+    font-size: .9rem;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer; /* Manito al pasar por encima */
+    
+    background-color: #f1f3f4; /* Gris claro */
+    color: #5f6368; /* Gris oscuro */
+    border: 1px solid transparent; /* Sin borde inicialmente */
+    border-radius: 4px; /* Bordes redondeados */
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Efecto al hacer hover (cuando el mouse pasa sobre el botón) */
+input[type="submit"]:hover {
+    border: 1px solid #dadce0; /* Borde gris claro */
+    background-color: #f1f3f4; /* Gris más claro para el fondo */
+}
+
+/* Efecto al hacer clic (focus) */
+input[type="submit"]:active {
+    border: 1px solid #4285f4; /* Borde azul al hacer clic */
+    background-color: #f1f3f4; /* Mantener fondo claro al hacer clic */
+}
+
+
+
+
+/* Advanced Style */
+/* Barra de navegación */
+.container-nav_bar {
+    display: flex;
+    flex-direction: row;
+    white-space: normal;
+    justify-content: space-between;
+    align-items: baseline; /* Asegura que todos los hijos ocupen la misma altura */
+    font-size: 1.25rem;
+    height: 2.99rem;
+    border: 0px solid #1A73E8; /* Blue */
+}
+
+/* Estilos del logo */
+.logo-link {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: -.015rem;
+    width: auto;
+    padding-top: .75rem;
+    padding-bottom: 0.01rem;
+    padding-left: 1.2rem;
+    border: 0px dashed #EA4335; /* Red */
+}
+
+/* Estilo para letras grandes */
+.large {
+    font-size: 1.55rem;
+    font-weight: 400;
+}
+
+/* Colores */
+.color1 { color: #1A73E8; } /* Blue */
+.color2 { color: #EA4335; } /* Red */
+.color3 { color: #FBBC05; } /* Yellow */
+.color4 { color: #34A853; } /* Green */
+
+/* Estilo general para otros enlaces */
+a {
+    color: black;
+    font-size: .8rem;
+    text-decoration: none;
+    padding-top: 1.05rem;
+    padding-right: 1.03rem;
+    padding-bottom: .35rem;
+    padding-left: 1.03rem;
+    border: 0px dashed #EA4335; /* Red */
+}
+
+/* Contenedor del título */
+.container-title {
+    display: flex;
+    flex-direction: row;
+    white-space: normal;
+    align-items: baseline;
+    font-size: 1.25rem;
+    color: #EA4335; /* Red */
+    width: 100%;
+    min-width: 0; /* Permite que los hijos se reduzcan */
+    border-bottom: 1px solid #E3E4E8; /* Gray */
+}
+
+/* Título */
+.title1 {
+    display: flex;
+    width: auto;
+    padding: 2.55rem 2.17rem 1.5rem 2.17rem;
+    border: 0px dashed #EA4335; /* Red */
+}
+
+/* Contenedor del subtítulo */
+.container-subtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+    width: 100%; /* Ahora ocupa el ancho total */
+    min-width: 0; /* Permite que los hijos se reduzcan */
+    
+    flex: 1;
+    flex-shrink: 1;
+    height: 5.2rem;
+    border: 0px solid #1A73E8; /* Blue */
+}
+
+/* Subtítulo 1 */
+.subtitle1 {
+    flex: 1; /* Permite que se reduzca proporcionalmente */
+    min-width: 13.3rem;
+    max-width: 14.3rem; /* Se asegura de que no superen este tamaño */
+
+    padding-top: 2.5rem;
+    padding-bottom: .15rem;
+    padding-left: 2.8rem;
+    
+    border: 0px dashed #EA4335; /* Red */
+}
+
+/* Subtítulo 2 */
+.subtitle2 {
+    flex: 2; /* Permite que crezca más si hay espacio */
+    min-width: 14.5rem;
+    max-width: 35.7rem;
+    height: 100%;
+    
+    flex-shrink: 2;
+
+    border: 0px dashed #EA4335; /* Red */
+}
+.subtitle3 {
+    flex: 1; /* Permite que crezca más si hay espacio */
+    min-width: 0;
+    max-width: 24.3rem;
+    height: 100%;
+
+    flex-shrink: 2;
+
+    border: 0px dashed #EA4335; /* Red */
+}
+
+/* Contenedor del formulario */
+.container-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 0; /* Permite que los hijos se reduzcan */
+
+    width: 100%;
+    flex: 1;
+    flex-shrink: 1;
+
+    margin-bottom: .8rem;
+    border: 0px dashed #1A73E8; /* Blue */
+}
+
+/* Etiquetas */
+label {
+    flex: 1;
+    min-width: 13.3rem;
+    max-width: 14.3rem; /* Se asegura de que no superen este tamaño */
+    padding-left: 2.8rem;
+    font-size: .8rem;
+    border: 0px dashed #EA4335; /* Red */
+}
+
+/* Campos de entrada */
+.input-advanced {
+    all: unset;
+    box-sizing: border-box;
+    font-family: inherit;
+    flex: 2;
+    min-width: 14.5rem;
+    max-width: 35.7rem;
+    flex-shrink: 2;
+
+    padding: 0.25rem 0.5rem;
+    line-height: 1.2rem;
+
+    border-radius: 1px;
+
+    border: 1px solid #D3D3D3; /* Gray */
+}
+
+.input-advanced:focus {
+    box-shadow: inset 0 2px 2px #D3D3D3; /* Gray */
+    outline: none !important;
+    border-color: #4285F4; /* Blue */
+    border-width: 1px;
+}
+
+.todo {
+    flex: 1;
+    min-width: 0;
+    max-width: 24.3rem;
+    flex-shrink: 1;
+
+    height: 100%;
+
+    border: 0px dashed #EA4335; /* Red */
+}
+
+.space-before-button{
+    flex: 1;
+    flex-shrink: 0;
+    min-width: 18.5rem;
+    width: 100%;
+    max-width: 41rem;
+    height: auto;
+
+    border: 1px dashed #EA4335; /* Red */
+}
+
+.container-button-advanced {
+    all: unset;
+    box-sizing: border-box;
+    font-family: inherit;
+    flex: 0;
+    min-width: 14.5rem;
+    max-width: 35.7rem;
+
+    padding: 0.25rem 0.5rem;
+    line-height: 1.2rem;
+
+    border-radius: 1px;
+
+    border: 0px solid #D3D3D3; /* Gray */
+}
