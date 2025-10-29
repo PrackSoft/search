@@ -4,14 +4,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Asegura consistencia en las dimensiones */
+    box-sizing: border-box; /* Ensures consistency in dimensions */
 }
 
 html, body {
-    font-family: 'Roboto', sans-serif; /* Fuente global */
+    font-family: 'Roboto', sans-serif; /* Global font */
 }
 
-/* Contenedor principal */
+/* Main container */
 .container {
     background-color: none;
 }
@@ -20,13 +20,13 @@ html, body {
 
 
 /* Google Style */
-/* Barra de navegación */
+/* Nav bar */
 .container-nav_bar1 {
     display: flex;
     flex-direction: row;
     white-space: normal;
     justify-content: end;
-    align-items: baseline; /* Asegura que todos los hijos ocupen la misma altura */
+    align-items: baseline; /* Ensures that all children occupy the same height */
     font-size: 1.25rem;
     padding-top: 1rem;
     height: 2.99rem;
@@ -51,7 +51,7 @@ html, body {
     border: 0px dashed #EA4335; /* Red */
 }
 
-/* Campos de entrada */
+/* Input fields */
 .input-google {
     all: unset;
     box-sizing: border-box;
@@ -75,9 +75,9 @@ html, body {
 }
 
 .input-google:focus {
-    box-shadow: 0 1.5px 8px #D3D3D3; /* Sombra en los 4 lados */
+    box-shadow: 0 1.5px 8px #D3D3D3; /* Shadow on all four sides */
     outline: none;
-    border-color: #E3E4E8; /* Mantener el borde gris */
+    border-color: #E3E4E8; /* Keep the gray border */
 }
 
 .buttons-group {
@@ -89,52 +89,52 @@ html, body {
 
 }
 
-/* Estilo para los botones */
+/* Style for buttons */
 input[type="submit"] {
     all: unset;
-    padding: 0.55rem 1rem; /* Espaciado en los botones */
+    padding: 0.55rem 1rem; /* Spacing on buttons */
     font-size: .9rem;
     font-weight: 400;
     text-align: center;
-    cursor: pointer; /* Manito al pasar por encima */
+    cursor: pointer; /* Pointer cursor on hover */
     
-    background-color: #f1f3f4; /* Gris claro */
-    color: #5f6368; /* Gris oscuro */
-    border: 1px solid transparent; /* Sin borde inicialmente */
-    border-radius: 4px; /* Bordes redondeados */
+    background-color: #f1f3f4; /* Light gray */
+    color: #5f6368; /* Dark gray */
+    border: 1px solid transparent; /* No border initially */
+    border-radius: 4px; /* Rounded borders */
 
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
-/* Efecto al hacer hover (cuando el mouse pasa sobre el botón) */
+/* Hover effect (when the mouse is over the button) */
 input[type="submit"]:hover {
-    border: 1px solid #dadce0; /* Borde gris claro */
-    background-color: #f1f3f4; /* Gris más claro para el fondo */
+    border: 1px solid #dadce0; /* Light gray border on hover */
+    background-color: #f1f3f4; /* Keep Lightest gray for the background on hover */
 }
 
-/* Efecto al hacer clic (focus) */
+/* Click effect (focus) */
 input[type="submit"]:active {
-    border: 1px solid #4285f4; /* Borde azul al hacer clic */
-    background-color: #f1f3f4; /* Mantener fondo claro al hacer clic */
+    border: 1px solid #4285f4; /* Blue border on click */
+    background-color: #f1f3f4; /* Keep light background on click */
 }
 
 
 
 
 /* Advanced Style */
-/* Barra de navegación */
+/* Nav bar */
 .container-nav_bar {
     display: flex;
     flex-direction: row;
     white-space: normal;
     justify-content: space-between;
-    align-items: baseline; /* Asegura que todos los hijos ocupen la misma altura */
+    align-items: baseline; /* Ensures that all children occupy the same height */
     font-size: 1.25rem;
     height: 2.99rem;
     border: 0px solid #1A73E8; /* Blue */
 }
 
-/* Estilos del logo */
+/* Styles for Google's logo */
 .logo-link {
     display: flex;
     flex-direction: row;
@@ -152,19 +152,19 @@ input[type="submit"]:active {
     border: 0px dashed #EA4335; /* Red */
 }
 
-/* Estilo para letras grandes */
+/* Style for large text */
 .large {
     font-size: 1.55rem;
     font-weight: 400;
 }
 
-/* Colores */
+/* Colors */
 .color1 { color: #1A73E8; } /* Blue */
 .color2 { color: #EA4335; } /* Red */
 .color3 { color: #FBBC05; } /* Yellow */
 .color4 { color: #34A853; } /* Green */
 
-/* Estilo general para otros enlaces */
+/* General style for other links */
 a {
     color: black;
     font-size: .8rem;
@@ -176,7 +176,7 @@ a {
     border: 0px dashed #EA4335; /* Red */
 }
 
-/* Contenedor del título */
+/* Title container */
 .container-title {
     display: flex;
     flex-direction: row;
@@ -185,11 +185,11 @@ a {
     font-size: 1.25rem;
     color: #EA4335; /* Red */
     width: 100%;
-    min-width: 0; /* Permite que los hijos se reduzcan */
+    min-width: 0; /* Allows children to shrink */
     border-bottom: 1px solid #E3E4E8; /* Gray */
 }
 
-/* Título */
+/* Title */
 .title1 {
     display: flex;
     width: auto;
@@ -197,15 +197,15 @@ a {
     border: 0px dashed #EA4335; /* Red */
 }
 
-/* Contenedor del subtítulo */
+/* Subtitle container */
 .container-subtitle {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     
-    width: 100%; /* Ahora ocupa el ancho total */
-    min-width: 0; /* Permite que los hijos se reduzcan */
+    width: 100%; /* Now takes full width */
+    min-width: 0; /* Allows children to shrink */
     
     flex: 1;
     flex-shrink: 1;
@@ -213,11 +213,11 @@ a {
     border: 0px solid #1A73E8; /* Blue */
 }
 
-/* Subtítulo 1 */
+/* Subtitle 1 */
 .subtitle1 {
-    flex: 1; /* Permite que se reduzca proporcionalmente */
+    flex: 1; /* Allows proportional shrinking */
     min-width: 13.3rem;
-    max-width: 14.3rem; /* Se asegura de que no superen este tamaño */
+    max-width: 14.3rem; /* Ensures they do not exceed this size */
 
     padding-top: 2.5rem;
     padding-bottom: .15rem;
@@ -226,9 +226,9 @@ a {
     border: 0px dashed #EA4335; /* Red */
 }
 
-/* Subtítulo 2 */
+/* Subtitle 2 */
 .subtitle2 {
-    flex: 2; /* Permite que crezca más si hay espacio */
+    flex: 2; /* Allows growth if there is extra space */
     min-width: 14.5rem;
     max-width: 35.7rem;
     height: 100%;
@@ -238,7 +238,7 @@ a {
     border: 0px dashed #EA4335; /* Red */
 }
 .subtitle3 {
-    flex: 1; /* Permite que crezca más si hay espacio */
+    flex: 1; /* Allows growth if there is extra space */
     min-width: 0;
     max-width: 24.3rem;
     height: 100%;
@@ -248,13 +248,13 @@ a {
     border: 0px dashed #EA4335; /* Red */
 }
 
-/* Contenedor del formulario */
+/* Form container */
 .container-form {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    min-width: 0; /* Permite que los hijos se reduzcan */
+    min-width: 0; /* Allows children to shrink */
 
     width: 100%;
     flex: 1;
@@ -264,17 +264,17 @@ a {
     border: 0px dashed #1A73E8; /* Blue */
 }
 
-/* Etiquetas */
+/* Labels */
 label {
     flex: 1;
     min-width: 13.3rem;
-    max-width: 14.3rem; /* Se asegura de que no superen este tamaño */
+    max-width: 14.3rem; /* Ensures they do not exceed this size */
     padding-left: 2.8rem;
     font-size: .8rem;
     border: 0px dashed #EA4335; /* Red */
 }
 
-/* Campos de entrada */
+/* Input fields */
 .input-advanced {
     all: unset;
     box-sizing: border-box;
