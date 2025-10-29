@@ -8,15 +8,9 @@
 }
 
 html, body {
+    background-color: none;
     font-family: 'Roboto', sans-serif; /* Global font */
 }
-
-/* Main container */
-.container {
-    background-color: none;
-}
-
-
 
 
 /* Google Style */
