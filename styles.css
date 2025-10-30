@@ -1,5 +1,4 @@
 /* Common Styles */
-
 /* Global reset */
 * {
     margin: 0;
@@ -7,56 +6,47 @@
     box-sizing: border-box; /* Ensures consistency in dimensions */
 }
 
+/* General */
 html, body {
     background-color: white;
     font-family: 'Roboto', sans-serif; /* Global font */
 }
 
-/* Nav bars */
-.nav_bar {
-    white-space: normal;
-    align-items: baseline; /* Ensures that all children occupy the same height */
-    padding-top: 1.25rem;
-    height: 2.99rem;
-    border: 0px solid #1A73E8; /* Blue */
-}
-/* Index */
-.nav_bar-index {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    padding-right: 10rem;
-}
-
-/* Images and Advanced */
-.nav_bar-images_advanced {
-    display: flex;
-    flex-direction: row;
-    white-space: normal;
-    align-items: baseline; /* Ensures that all children occupy the same height */
-    font-size: 1.25rem;
-    padding-top: 1rem;
-    height: 2.99rem;
-    border: 0px solid #1A73E8; /* Blue */
-    justify-content: space-between;
-}
-
-/* Nav bar links */
+/* Links */
 a {
     color: black;
     font-size: .8rem;
     text-decoration: none;
-    padding-left: 1.03rem;
     border: 0px dashed #EA4335; /* Red */
+    margin-right: .8rem;
 }
 
-/* Index Google's logo */
+/* Colors for Google's logo */
+.color1 { color: #1A73E8; } /* Blue */
+.color2 { color: #EA4335; } /* Red */
+.color3 { color: #FBBC05; } /* Yellow */
+.color4 { color: #34A853; } /* Green */
+
+
+/* INDEX AND IMAGES PAGES */
+/* Nav bars */
+.nav_bar-index-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;    
+    align-items: baseline; /* Ensures that all children occupy the same height */
+    padding-top: 1.1rem;
+    padding-right: 9rem;
+    height: 2.99rem;
+    border: 0px solid #1A73E8; /* Blue */
+}
+
+/* Main Google's logo */
 .logo-centered {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    min-width: 0;
+    align-items: baseline; /* Ensures that all children occupy the same height */    min-width: 0;
     width: 100%;
     height: 100%;
     padding-top: 8.2rem;
@@ -70,18 +60,11 @@ a {
     border: 0px dashed #EA4335; /* Red */
 }
 
-/* Colors */
-.color1 { color: #1A73E8; } /* Blue */
-.color2 { color: #EA4335; } /* Red */
-.color3 { color: #FBBC05; } /* Yellow */
-.color4 { color: #34A853; } /* Green */
-
-/* Style for large text */
+/* Fonts for Google's logo */
 .xlarge {
     font-size: 6rem;
     font-weight: 400;
 }
-
 .large {
     font-size: 4.75rem;
     font-weight: 500;
@@ -177,31 +160,39 @@ input[type="submit"]:active {
 }
 
 
+
+/* ADVANCED PAGE */
+.nav_bar-advanced {
+    display: flex;
+    flex-direction: row;
+    white-space: normal;
+    align-items: baseline; /* Ensures that all children occupy the same height */
+    padding-top: .2rem;
+    padding-right: 9rem;
+    padding-left: 1.2rem;
+    height: 2.99rem;
+    border: 0px solid #1A73E8; /* Blue */
+    justify-content: space-between;
+}
+
+
+/* Styles for Google's logo */
+.logo-link {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -.075rem;
+    width: auto;
+    border: 0px dashed #EA4335; /* Red */
+}
+
+
 /* Style for large text */
 .medium {
     font-size: 1.55rem;
     font-weight: 400;
 }
-
 .regular {
     font-size: 1.2rem;
     font-weight: 500;
-}
-/* Styles for Google's logo */
-.logo-link {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    letter-spacing: -.015rem;
-    width: auto;
-    padding-top: .75rem;
-    padding-bottom: 0.01rem;
-    padding-left: 1.2rem;
-    border: 0px dashed #EA4335; /* Red */
 }
 
 
