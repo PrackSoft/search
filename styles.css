@@ -21,12 +21,16 @@ a {
     margin-right: .8rem;
 }
 
-/* Colors for Google's logo */
+/* Properties for Google's logo */
 .color1 { color: #1A73E8; } /* Blue */
 .color2 { color: #EA4335; } /* Red */
 .color3 { color: #FBBC05; } /* Yellow */
 .color4 { color: #34A853; } /* Green */
 
+.rotation {
+  display: inline-block;
+  transform: rotate(-22deg);
+}
 
 /* INDEX AND IMAGES PAGES */
 /* Nav bars */
