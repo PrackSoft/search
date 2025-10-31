@@ -1,4 +1,4 @@
-/* Common Styles */
+/* COMMON STYLES */
 /* Global reset */
 * {
     margin: 0;
@@ -32,6 +32,7 @@ a {
   transform: rotate(-22deg);
 }
 
+
 /* INDEX AND IMAGES PAGES */
 /* Nav bars */
 .nav_bar-index-images {
@@ -45,7 +46,7 @@ a {
     border: 0px solid #1A73E8; /* Blue */
 }
 
-/* Fonts for Google's logo */
+/* Fonts properties for Google's main logo */
 .xlarge {
     font-size: 6rem;
     font-weight: 400;
@@ -56,8 +57,8 @@ a {
 }
 
 
-/* SEARCH PAGE */
-/* Main Google's logo */
+/* INDEX PAGE */
+/* Google's main logo contanier */
 .logo-centered {
   display: flex;
   align-items: baseline; /* Ensures that all children occupy the same height */
@@ -76,7 +77,7 @@ a {
 }
 
 /* Search form */
-.container-centered {
+.input-centered {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,14 +85,11 @@ a {
     min-width: 0;
     width: 100%;
     height: 100%;
-
     padding-top: 1rem;
     padding-right: 1.5rem;
     padding-bottom: 0rem;
     padding-left: 1.5rem;
-
     margin-top: 0rem;
-
     border: 0px dashed #EA4335; /* Red */
 }
 
@@ -111,16 +109,19 @@ a {
 
     padding: 0 1rem;
 
-    box-shadow: 0 1.5px 8px #D3D3D3; /* Gray */
+    box-shadow: 0 1px 7px 0px #E3E4E8; /* Gray */
 
     font-size: 1rem;
 
     border: 1px solid #E3E4E8; /* Gray */
 }
+.input-google:hover {
+    box-shadow: 0 2px 9px -1.5px #cfd1d6; /* Gray */
+}
 
 .input-google:focus {
-    box-shadow: 0 1.5px 8px #D3D3D3; /* Shadow on all four sides */
-    outline: none;
+    box-shadow: 0 2px 9px -1.5px #cfd1d6 /* Darker Gray */
+
     border-color: #E3E4E8; /* Keep the gray border */
 }
 
@@ -142,10 +143,10 @@ input[type="submit"] {
     text-align: center;
     cursor: pointer; /* Pointer cursor on hover */
     
-    background-color: #f1f3f4; /* Light gray */
+    background-color: #f6f6f6; /* Light gray */
     color: #5f6368; /* Dark gray */
     border: 1px solid transparent; /* No border initially */
-    border-radius: 4px; /* Rounded borders */
+    border-radius: 9px; /* Rounded borders */
 
     transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
@@ -153,246 +154,13 @@ input[type="submit"] {
 /* Hover effect (when the mouse is over the button) */
 input[type="submit"]:hover {
     border: 1px solid #dadce0; /* Light gray border on hover */
-    background-color: #f1f3f4; /* Keep Lightest gray for the background on hover */
+    background-color: #cfd1d6; /* Keep Lightest gray for the background on hover */
+    box-shadow: 0 2px 3px -3px #E3E4E8; /* Gray */
 }
 
 /* Click effect (focus) */
 input[type="submit"]:active {
     border: 1px solid #4285f4; /* Blue border on click */
     background-color: #f1f3f4; /* Keep light background on click */
-}
-
-
-/* IMAGES PAGE */
-/* Main Google's logo */
-.logo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Poppins', sans-serif;
-    border: 0px solid purple;
-
-}
-.logo {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    letter-spacing: -.2rem;
-    height: auto;
-    width: 100%;
-    border: 0px solid #1A73E8; /* Blue */
-    padding-top: 8.2rem;
-    padding-right: 1.5rem;
-    padding-bottom: 0rem;
-    padding-left: 1.5rem;
-}
-.logo-subtext {
-  margin-top: -2.4rem; 
-  margin-left: 13.5rem;
-  margin-bottom: .8rem;
-  font-size: 1rem;
-  color: #4285f4;
-  font-family: 'Poppins', sans-serif;
-  border: 0px solid red; /* Blue */
-}
-
-
-/* ADVANCED PAGE */
-.nav_bar-advanced {
-    display: flex;
-    flex-direction: row;
-    white-space: normal;
-    align-items: baseline; /* Ensures that all children occupy the same height */
-    padding-top: .2rem;
-    padding-right: 9rem;
-    padding-left: 1.2rem;
-    height: 2.99rem;
-    border: 0px solid #1A73E8; /* Blue */
-    justify-content: space-between;
-}
-/* Styles for Google's logo */
-.logo-link {
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: -.075rem;
-    width: auto;
-    border: 0px dashed #EA4335; /* Red */
-}
-/* Style for large text */
-.medium {
-    font-size: 1.55rem;
-    font-weight: 400;
-}
-.regular {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-
-
-
-
-
-/* Title container */
-.container-title {
-    display: flex;
-    flex-direction: row;
-    white-space: normal;
-    align-items: baseline;
-    font-size: 1.25rem;
-    color: #EA4335; /* Red */
-    width: 100%;
-    min-width: 0; /* Allows children to shrink */
-    border-bottom: 1px solid #E3E4E8; /* Gray */
-}
-
-/* Title */
-.title1 {
-    display: flex;
-    width: auto;
-    padding: 2.55rem 2.17rem 1.5rem 2.17rem;
-    border: 0px dashed #EA4335; /* Red */
-}
-
-/* Subtitle container */
-.container-subtitle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    
-    width: 100%; /* Now takes full width */
-    min-width: 0; /* Allows children to shrink */
-    
-    flex: 1;
-    flex-shrink: 1;
-    height: 5.2rem;
-    border: 0px solid #1A73E8; /* Blue */
-}
-
-/* Subtitle 1 */
-.subtitle1 {
-    flex: 1; /* Allows proportional shrinking */
-    min-width: 13.3rem;
-    max-width: 14.3rem; /* Ensures they do not exceed this size */
-
-    padding-top: 2.5rem;
-    padding-bottom: .15rem;
-    padding-left: 2.8rem;
-    
-    border: 0px dashed #EA4335; /* Red */
-}
-
-/* Subtitle 2 */
-.subtitle2 {
-    flex: 2; /* Allows growth if there is extra space */
-    min-width: 14.5rem;
-    max-width: 35.7rem;
-    height: 100%;
-    
-    flex-shrink: 2;
-
-    border: 0px dashed #EA4335; /* Red */
-}
-.subtitle3 {
-    flex: 1; /* Allows growth if there is extra space */
-    min-width: 0;
-    max-width: 24.3rem;
-    height: 100%;
-
-    flex-shrink: 2;
-
-    border: 0px dashed #EA4335; /* Red */
-}
-
-/* Form container */
-.container-form {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    min-width: 0; /* Allows children to shrink */
-
-    width: 100%;
-    flex: 1;
-    flex-shrink: 1;
-
-    margin-bottom: .8rem;
-    border: 0px dashed #1A73E8; /* Blue */
-}
-
-/* Labels */
-label {
-    flex: 1;
-    min-width: 13.3rem;
-    max-width: 14.3rem; /* Ensures they do not exceed this size */
-    padding-left: 2.8rem;
-    font-size: .8rem;
-    border: 0px dashed #EA4335; /* Red */
-}
-
-/* Input fields */
-.input-advanced {
-    all: unset;
-    box-sizing: border-box;
-    font-family: inherit;
-    flex: 2;
-    min-width: 14.5rem;
-    max-width: 35.7rem;
-    flex-shrink: 2;
-
-    padding: 0.25rem 0.5rem;
-    line-height: 1.2rem;
-
-    border-radius: 1px;
-
-    border: 1px solid #D3D3D3; /* Gray */
-}
-
-.input-advanced:focus {
-    box-shadow: inset 0 2px 2px #D3D3D3; /* Gray */
-    outline: none !important;
-    border-color: #4285F4; /* Blue */
-    border-width: 1px;
-}
-
-.todo {
-    flex: 1;
-    min-width: 0;
-    max-width: 24.3rem;
-    flex-shrink: 1;
-
-    height: 100%;
-
-    border: 0px dashed #EA4335; /* Red */
-}
-
-.space-before-button{
-    flex: 1;
-    flex-shrink: 0;
-    min-width: 18.5rem;
-    width: 100%;
-    max-width: 41rem;
-    height: auto;
-
-    border: 1px dashed #EA4335; /* Red */
-}
-
-.container-button-advanced {
-    all: unset;
-    box-sizing: border-box;
-    font-family: inherit;
-    flex: 0;
-    min-width: 14.5rem;
-    max-width: 35.7rem;
-
-    padding: 0.25rem 0.5rem;
-    line-height: 1.2rem;
-
-    border-radius: 1px;
-
-    border: 0px solid #D3D3D3; /* Gray */
+    box-shadow: none; /* Gray */
 }
