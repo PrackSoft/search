@@ -46,11 +46,43 @@ a {
 }
 
 /* Main Google's logo */
+
+
+/* Fonts for Google's logo */
+.xlarge {
+    font-size: 6rem;
+    font-weight: 400;
+}
+.large {
+    font-size: 4.75rem;
+    font-weight: 500;
+}
+.container-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* centra todo el conjunto */
+  width: 100%;
+  padding-top: 8rem;
+}
+
+.logo-wrapper {
+  position: relative;
+  display: inline-block; /* mantiene logo + subtexto juntos */
+}
+
 .logo-centered {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;  
+}
+/*.logo-centered {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: baseline; /* Ensures that all children occupy the same height */    min-width: 0;
+    align-items: baseline; /* Ensures that all children occupy the same height */    
+    /*min-width: 0;
     width: 100%;
     height: 100%;
     padding-top: 8.2rem;
@@ -62,17 +94,21 @@ a {
     font-weight: 500;
     letter-spacing: -.015rem;
     border: 0px dashed #EA4335; /* Red */
+
+
+.logo-subtext {
+  position: absolute;
+  bottom: 0.7rem;
+  left: 85%;
+  transform: translateX(-30%);
+  font-size: 1rem;
+  color: #4285f4;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Fonts for Google's logo */
-.xlarge {
-    font-size: 6rem;
-    font-weight: 400;
-}
-.large {
-    font-size: 4.75rem;
-    font-weight: 500;
-}
+
+
+
 
 /* Search form */
 .container-centered {
