@@ -22,7 +22,7 @@ a {
     border: 0px dashed red;
 }
 
-/* White, gray shades, black font and blue border */
+/* White, gray shades, black font, blue border and red title */
 :root {
     --white: #ffffff;
     --gray1: #f8f9fa;
@@ -30,6 +30,7 @@ a {
     --gray3: #5f6368;
     --black: #202124; 
     --blue: #1A73E8;
+    --red: #EA4335;
 }
 
 /* Properties for Google's logo */
@@ -198,4 +199,191 @@ body.images-page .field-common {
     width: 100%;
     max-width: 36rem;
     margin: 0 auto;
+}
+
+
+/* ADVANCED */
+.nav-bar_advanced {
+    display: flex;
+    flex-direction: row;
+    white-space: normal;
+    align-items: baseline; /* Ensures that all children occupy the same height */
+    padding-top: .2rem;
+    padding-right: 9rem;
+    padding-left: 1.2rem;
+    height: 2.99rem;
+    justify-content: space-between;
+
+    border: 0px solid blue;
+}
+
+/* Styles for Google's logo */
+.logo-link {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -.075rem;
+    width: auto;
+
+    border: 0px dashed red;
+}
+/* Style for nav bar logo */
+.medium {
+    font-size: 1.55rem;
+    font-weight: 400;
+}
+.regular {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.title {
+display: flex;
+flex-direction: row;
+white-space: normal;
+align-items: baseline;
+font-size: 1.25rem;
+color: var(--red);
+width: 100%;
+min-width: 0;
+padding: 2.55rem 2.17rem 1.5rem 2.17rem;
+border-bottom: 1px solid var(--gray2);
+}
+
+/* Subtitles container */
+.container-subtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; /* Now takes full width */
+    min-width: 0; /* Allows children to shrink */
+    flex: 1;
+    flex-shrink: 1;
+    height: 5.2rem;
+
+    border: 0px solid blue;
+}
+/* Subtitle 1 */
+.subtitle1 {
+    flex: 1; /* Allows proportional shrinking */
+    min-width: 13.3rem;
+    max-width: 14.3rem; /* Ensures they do not exceed this size */
+    height: 100%;
+
+    padding-top: 2.5rem;
+    padding-bottom: .15rem;
+    padding-left: 2.8rem;
+    
+    border: 1px dashed #EA4335; /* Red */
+}
+
+/* Subtitle 2 */
+.subtitle2 {
+    flex: 2; /* Allows growth if there is extra space */
+    min-width: 14.5rem;
+    max-width: 35.7rem;
+    height: 100%;
+    
+    flex-shrink: 2;
+
+    border: 1px dashed #EA4335; /* Red */
+}
+.subtitle3 {
+    flex: 1; /* Allows growth if there is extra space */
+    min-width: 0;
+    max-width: 24.3rem;
+    height: 100%;
+
+    flex-shrink: 2;
+    padding-top: 2.5rem;
+    border: 1px dashed #EA4335; /* Red */
+}
+/* Form container */
+.container-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 0; /* Allows children to shrink */
+
+    width: 100%;
+    flex: 1;
+    flex-shrink: 1;
+
+    margin-bottom: .8rem;
+    border: 0px dashed #1A73E8; /* Blue */
+}
+
+/* Labels */
+label {
+    flex: 1;
+    min-width: 13.3rem;
+    max-width: 14.3rem; /* Ensures they do not exceed this size */
+    padding-left: 2.8rem;
+    font-size: .8rem;
+    border: 0px dashed #EA4335; /* Red */
+}
+
+/* Input fields */
+.input-advanced {
+    all: unset;
+    box-sizing: border-box;
+    font-family: inherit;
+    flex: 2;
+    min-width: 14.5rem;
+    max-width: 35.7rem;
+    flex-shrink: 2;
+
+    padding: 0.25rem 0.5rem;
+    line-height: 1.2rem;
+
+    border-radius: 1px;
+
+    border: 1px solid #D3D3D3; /* Gray */
+}
+
+.input-advanced:focus {
+    box-shadow: inset 0 2px 2px #D3D3D3; /* Gray */
+    outline: none !important;
+    border-color: #4285F4; /* Blue */
+    border-width: 1px;
+}
+
+.todo {
+    flex: 1;
+    min-width: 0;
+    max-width: 24.3rem;
+    flex-shrink: 1;
+
+    height: 100%;
+
+    border: 0px dashed #EA4335; /* Red */
+}
+
+.space-before-button{
+    flex: 1;
+    flex-shrink: 0;
+    min-width: 18.5rem;
+    width: 100%;
+    max-width: 41rem;
+    height: auto;
+
+    border: 1px dashed #EA4335; /* Red */
+}
+
+.btn-advanced {
+    all: unset !important;   /* resetea solo esta clase */
+    cursor: pointer !important;
+    font-family: inherit !important;
+    color: var(--white) !important;
+    background-color: var(--blue) !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 0.55rem 1rem !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+    transition: background-color 0.2s ease !important;
+}
+.btn-advanced:hover {
+    background-color: #1669c1 !important;
 }
