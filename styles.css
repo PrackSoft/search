@@ -82,11 +82,11 @@ a {
 }
 /* Hover / focus */
 .field-common:hover {
-    box-shadow: 0 2px 9px -1.5px var(--gray2);
+    box-shadow: 0 2px 10px 0px var(--gray2);
 }
 .field-common:focus {
-    border-color: var(--gray2);
-    box-shadow: 0 2px 9px -1.5px var(--gray2);
+    outline: none;
+    box-shadow: 0 2px 10px 0px var(--gray2);
 }
 
 /* Submit buttons */
