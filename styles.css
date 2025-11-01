@@ -43,7 +43,6 @@ a {
   transform: rotate(-22deg);
 }
 
-
 /* INDEX AND IMAGES PAGES */
 /* Navigation bars */
 .nav-bar_index-images {
@@ -67,6 +66,30 @@ a {
     font-weight: 500;
 }
 
+/* Input field */
+.field-common {
+    display: block;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-align: start;
+    min-height: 3rem;
+    height: 3rem;
+    border-radius: 24px;
+    padding: 0 2.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--gray2);
+    box-shadow: 0 1px 7px -1.5px var(--gray2);
+}
+/* Hover / focus */
+.field-common:hover {
+    box-shadow: 0 2px 9px -1.5px var(--gray2);
+}
+.field-common:focus {
+    border-color: var(--gray2);
+    box-shadow: 0 2px 9px -1.5px var(--gray2);
+}
+
+/* Submit buttons */
 .buttons-group {
     display: flex;
     justify-content: center;
@@ -76,9 +99,10 @@ a {
 
 
 /* INDEX PAGE */
-/* Google's main logo contanier */
+/* Google's main logo container */
 .logo-centered {
   display: flex;
+
   align-items: baseline; /* Ensures that all children occupy the same height */
   justify-content: center;
   min-width: 0;
@@ -94,49 +118,11 @@ a {
   border: 0px dashed red; /* Red */
 }
 
-/* Search form */
-.input-centered {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 0;
-    width: 100%;
-    height: 100%;
-    padding-top: 1rem;
-    padding-right: 1.5rem;
-    padding-bottom: 0rem;
-    padding-left: 1.5rem;
-    margin-top: 0rem;
-    border: 0px dashed red; /* Red */
-}
-
 /* Index field */
-.field-index {
-    all: unset;
-    box-sizing: border-box;
-    font-family: 'Poppins';
-    text-align: start;
-
-
-    min-height: 3rem;
-    height: 3rem;
-    border-radius: 24px;
-
-    padding: 0 2.5rem;
-    font-size: 1rem;
-    border: 1px solid var(--gray2);
-    box-shadow: 0 1px 7px -1.5px var(--gray2);
+body.index-page .field-common {
     width: 100%;
     max-width: 43rem;
-}
-.field-index:hover {
-    box-shadow: 0 2px 9px -1.5px var(--gray2);
-}
-
-.field-index:focus {
-    border-color: var(--gray3);
-    box-shadow: 0 2px 9px -1.5px var(--gray2);
+    margin: 0 auto;
 }
 
 /* Style for buttons */
@@ -208,30 +194,8 @@ input[type="submit"]:active {
 }
 
 /* Images field */
-.field-images {
-    all: unset;
-    box-sizing: border-box;
-    font-family: 'Poppins';
-    text-align: start;
-
-
-    min-height: 3rem;
-    height: 3rem;
-    border-radius: 24px;
-
-    padding: 0 2.5rem;
-    font-size: 1rem;
-    border: 1px solid var(--gray2);
-    box-shadow: 0 1px 7px -1.5px var(--gray2);
+body.images-page .field-common {
     width: 100%;
     max-width: 36rem;
-}
-
-.field-images:hover {
-    box-shadow: 0 3px 12px -7px var(--gray3);
-}
-
-.field-images:focus {
-    border-color: var(--gray2);
-    box-shadow: 0 3px 12px -7px var(--gray3);
+    margin: 0 auto;
 }
