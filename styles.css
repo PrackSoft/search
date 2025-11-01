@@ -21,6 +21,14 @@ a {
     margin-right: .8rem;
 }
 
+/* Shades of gray and blue border */
+:root {
+  --gray1: #f6f6f6;
+  --gray2: #dadce0;
+  --gray3: #5f6368;
+  --blue: #1A73E8;
+}
+
 /* Properties for Google's logo */
 .color1 { color: #1A73E8; } /* Blue */
 .color2 { color: #EA4335; } /* Red */
@@ -43,7 +51,7 @@ a {
     padding-top: 1.1rem;
     padding-right: 9rem;
     height: 2.99rem;
-    border: 0px solid #1A73E8; /* Blue */
+    border: 0px solid blue; /* Blue */
 }
 
 /* Fonts properties for Google's main logo */
@@ -54,6 +62,13 @@ a {
 .large {
     font-size: 4.75rem;
     font-weight: 500;
+}
+
+.buttons-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 2rem;
 }
 
 
@@ -73,7 +88,7 @@ a {
   font-family: 'Poppins', sans-serif;
   letter-spacing: -.23rem;
   margin-top: 0rem;
-  border: 0px dashed #EA4335; /* Red */
+  border: 0px dashed red; /* Red */
 }
 
 /* Search form */
@@ -90,11 +105,11 @@ a {
     padding-bottom: 0rem;
     padding-left: 1.5rem;
     margin-top: 0rem;
-    border: 0px dashed #EA4335; /* Red */
+    border: 0px dashed red; /* Red */
 }
 
-/* Input fields */
-.input-google {
+/* Input field */
+.field-index {
     all: unset;
     box-sizing: border-box;
     font-family: inherit;
@@ -108,30 +123,17 @@ a {
     border-radius: 24px;
 
     padding: 0 1rem;
-
-    box-shadow: 0 1px 7px 0px #E3E4E8; /* Gray */
-
     font-size: 1rem;
-
-    border: 1px solid #E3E4E8; /* Gray */
+    border: 1px solid var(--gray2);
+    box-shadow: 0 1px 7px 0px var(--gray1);
 }
-.input-google:hover {
-    box-shadow: 0 2px 9px -1.5px #cfd1d6; /* Gray */
-}
-
-.input-google:focus {
-    box-shadow: 0 2px 9px -1.5px #cfd1d6 /* Darker Gray */
-
-    border-color: #E3E4E8; /* Keep the gray border */
+.field-index:hover {
+    box-shadow: 0 2px 9px -1.5px var(--gray2);
 }
 
-.buttons-group {
-    display: flex;
-    justify-content: center;
-
-    gap: 12px;
-    margin-top: 2rem;
-
+.field-index:focus {
+    border-color: var(--gray1);
+    box-shadow: 0 2px 9px -1.5px var(--gray2);
 }
 
 /* Style for buttons */
@@ -142,25 +144,23 @@ input[type="submit"] {
     font-weight: 400;
     text-align: center;
     cursor: pointer; /* Pointer cursor on hover */
-    
-    background-color: #f6f6f6; /* Light gray */
-    color: #5f6368; /* Dark gray */
-    border: 1px solid transparent; /* No border initially */
     border-radius: 9px; /* Rounded borders */
-
     transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    background-color: var(--gray1);
+    color: var(--gray3);
+    border: 1px solid transparent; /* No border initially */
 }
 
 /* Hover effect (when the mouse is over the button) */
 input[type="submit"]:hover {
-    border: 1px solid #dadce0; /* Light gray border on hover */
-    background-color: #cfd1d6; /* Keep Lightest gray for the background on hover */
-    box-shadow: 0 2px 3px -3px #E3E4E8; /* Gray */
+    background-color: var(--gray1);
+    border: 1px solid var(--gray2);
+    box-shadow: 0 2px 2px -1px var(--gray2);
 }
 
 /* Click effect (focus) */
 input[type="submit"]:active {
-    border: 1px solid #4285f4; /* Blue border on click */
-    background-color: #f1f3f4; /* Keep light background on click */
+    background-color: var(--gray1);
+    border: 1px solid var(--blue); /* Blue border on click */
     box-shadow: none; /* Gray */
 }
