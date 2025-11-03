@@ -424,7 +424,7 @@ label {
 @media (max-width: 1072px) {
     html, body {
 
-        background-color: lightgoldenrodyellow;
+        /*background-color: lightgoldenrodyellow;*/
     }
 
     .container-subtitles {
@@ -455,6 +455,6 @@ label {
 @media (max-width: 575px) {
     html, body {
 
-        background-color: lightgreen;
+        /*background-color: lightgreen;*/
     }
 }
