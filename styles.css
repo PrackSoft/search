@@ -458,6 +458,6 @@ label {
 @media (max-width: 640px) {
     html, body {
 
-        background-color: lightgreen;
+        /*background-color: lightgreen;*/
     }
 }
