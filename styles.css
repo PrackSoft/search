@@ -454,10 +454,3 @@ label {
         flex-shrink: 2; 
     } 
 }
-
-@media (max-width: 640px) {
-    html, body {
-
-        /*background-color: lightgreen;*/
-    }
-}
