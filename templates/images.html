@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Images</title>
+        <!-- Google Fonts https://fonts.google.com -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+        <!-- External CSS -->
+        <link rel="stylesheet" href="../styles.css">
+    </head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Google Images</title>
-
-    <!-- Google Fonts https://fonts.google.com -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="../styles.css">
-
-</head>
-
-<body class="images-page">
-    
-    <!-- Navigation bar -->
-    <div class="nav-bar_index-images">
-        <a href="../index.html">Search</a>
-    </div>
-
-    <!-- Google's logo -->
-    <div class="logo-container">
-        <div class="logo">
-            <span class="color1 xlarge">G</span>
-            <span class="color2 large">o</span>
-            <span class="color3 large">o</span>
-            <span class="color1 large">g</span>
-            <span class="color4 large">l</span>
-            <span class="color2 large rotation">e</span>
+    <body id="images-page">
+        <!-- Navigation bar -->
+        <div class="nav-bar_index-images">
+            <a href="../index.html">Search</a>
         </div>
-        <div class="logo-subtext">Images</div>
-    </div>
-    <!-- Search form -->
-    <form action="https://google.com/images" method="get">
-        <div class="search-container">
-            <!-- Search field -->
-            <input type="text" name="q" class="field">
-
-            <!-- Google Search Button -->
-            <div class="buttons-group">
-                    <input type="submit" value="Google Search" name="btnG">
+        <!-- Google's logo ( Adapted from "Finance", CS50x ) -->
+        <div class="logo-container">
+            <div class="logo">
+                <span class="color1 xlarge">G</span>
+                <span class="color2 large">o</span>
+                <span class="color3 large">o</span>
+                <span class="color1 large">g</span>
+                <span class="color4 large">l</span>
+                <span class="color2 large rotation">e</span>
             </div>
+            <div class="logo-subtext">Images</div>
         </div>
-    </form>
-    
-</body>
+        <!-- Search form -->
+        <form action="https://google.com/images" method="get">
+            <div class="search-container">
+                <!-- Search field -->
+                <input type="text" name="q" class="field">
+
+                <!-- Google Search Button -->
+                <div class="buttons-group">
+                    <input type="submit" value="Google Search" name="btnG">
+                </div>
+            </div>
+        </form>
+    </body>
+
 </html>

@@ -1,17 +1,15 @@
-/* COMMON STYLES */
+/* COMMON STYLES INDEX-IMAGES-ADVANCED*/
 /* Global reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Ensures consistency in dimensions */
 }
-
 /* General */
 html, body {
     font-family: 'Roboto', 'Poppins', sans-serif; /* Global font */
     background-color: var(--white);
 }
-
 /* Links */
 a {
     color: var(--black);
@@ -19,9 +17,8 @@ a {
     text-decoration: none;
     margin-right: .8rem;
 
-    border: 0px dashed red;
+    border: 0px solid red;
 }
-
 /* White, gray shades, black font, blue border and red title */
 :root {
     --white: #ffffff;
@@ -33,20 +30,18 @@ a {
     --darker-blue: #1669c1;
     --red: #EA4335;
 }
-
-/* Properties for Google's logo */
+/* Properties for Google's logo ( Adapted from "Finance", CS50x ) */
 .color1 { color: #1A73E8; }
 .color2 { color: #EA4335; }
 .color3 { color: #FBBC05; }
 .color4 { color: #34A853; }
-
 .rotation {
   display: inline-block;
   transform: rotate(-22deg);
 }
 
+
 /* INDEX AND IMAGES PAGES */
-/* Navigation bars */
 .nav-bar_index-images {
     display: flex;
     flex-direction: row;
@@ -56,10 +51,8 @@ a {
     padding-right: 9.1rem;
     height: 2.99rem;
 
-    border: 0px solid red;
+    border: 0px dashed purple;
 }
-
-/* Fonts properties for Google's main logo */
 .xlarge {
     font-size: 6rem;
     font-weight: 400;
@@ -75,12 +68,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: .5rem 1rem;
+    padding: .5rem 1.3rem;
 
-    border: 0px solid red;    
+    border: 0px dashed purple;    
 }
-
-/* Input field */
 .field {
     display: block;
     box-sizing: border-box;
@@ -94,6 +85,8 @@ a {
     font-size: 1rem;
     border: 1px solid var(--gray2);
     box-shadow: 0 1px 7px -1.5px var(--gray2);
+
+    border: 0px solid red;
 }
 /* Hover / focus */
 .field:hover {
@@ -110,11 +103,12 @@ a {
     justify-content: center;
     gap: 12px;
     margin-top: 2rem;
+
+    border: 0px solid red;
 }
 
 
 /* INDEX PAGE */
-/* Google's main logo container */
 .logo-centered {
   display: flex;
   align-items: baseline; /* Ensures that all children occupy the same height */
@@ -129,44 +123,51 @@ a {
   font-family: 'Poppins', sans-serif;
   letter-spacing: -.23rem;
   margin-top: 0rem;
-  border: 0px dashed red;
-}
 
-/* Index field */
-body.index-page .field {
+  border: 0px dashed purple;
+}
+/* Index field only */
+#index-page .field {
     width: 100%;
     max-width: 43rem;
     margin: 0 auto;
-}
 
+    border: 0px solid red;
+}
 /* Style for buttons */
 input[type="submit"] {
     all: unset;
     cursor: pointer; /* Pointer cursor on hover */
     font-family: 'Roboto';
-    color: var(--gray3); /* Font color */
+    color: var(--gray3);
     font-size: .9rem;
     font-weight: 400;
     text-align: center;
-    padding: 0.55rem 1rem; /* Spacing on buttons */
+    padding: 0.55rem 1rem;
     border-radius: 9px;
     background-color: var(--gray1);
     transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
     border: 1px solid transparent; /* No border initially */
 }
-
 /* Hover effect (when the mouse is over the button) */
 input[type="submit"]:hover {
     background-color: var(--gray1);
     border: 1px solid var(--gray2);
     box-shadow: 0 2px 2px -1px var(--gray2);
 }
-
 /* Click effect (focus) */
 input[type="submit"]:active {
     background-color: var(--gray1);
     border: 1px solid var(--blue);
     box-shadow: none;
+}
+
+/* INDEX-IMAGES */
+@media (max-width: 1072px) { 
+    .field { 
+        flex: 1; 
+        flex-shrink: 2; 
+    } 
 }
 
 
@@ -180,7 +181,7 @@ input[type="submit"]:active {
     height: 100%;
     font-family: 'Poppins', sans-serif;
     
-    border: 0px solid purple;
+    border: 0px dashed purple;
 }
 .logo {
     display: flex;
@@ -194,7 +195,7 @@ input[type="submit"]:active {
     padding-bottom: 0rem;
     padding-left: 1.5rem;
 
-    border: 0px solid blue;
+    border: 0px solid red;
 }
 .logo-subtext {
     margin-top: -2.1rem; 
@@ -206,12 +207,13 @@ input[type="submit"]:active {
 
     border: 0px solid red;
 }
-
-/* Images field */
-body.images-page .field {
+/* Index field only */
+#images-page .field {
     width: 100%;
     max-width: 36rem;
     margin: 0 auto;
+
+    border: 0px solid red;
 }
 
 
@@ -227,16 +229,15 @@ body.images-page .field {
     height: 2.99rem;
     justify-content: space-between;
 
-    border: 0px solid blue;
+    border: 0px dashed purple;
 }
-
 /* Styles for Google's logo */
 .logo-link {
     font-family: 'Poppins', sans-serif;
     letter-spacing: -.075rem;
     width: auto;
 
-    border: 0px dashed red;
+    border: 0px solid red;
 }
 /* Style for nav bar logo */
 .medium {
@@ -260,10 +261,8 @@ body.images-page .field {
     padding: 2.55rem 2.17rem 1.5rem 2.17rem;
     border-bottom: 1px solid var(--gray2);
 
-    border: 0px dashed red;
+    /*border: 0px dashed purple;*/
 }
-
-/* Subtitles */
 .container-subtitles {
     display: flex;
     flex-direction: row;
@@ -273,13 +272,11 @@ body.images-page .field {
     align-items: center;
     width: 100%; /* Now takes full width */
     min-width: 0; /* Allows children to shrink */
-
     height: 5rem;
     padding: 0;
 
-    border: 0px solid blue;
+    border: 0px dashed purple;
 }
-
 .subtitle1 {
     flex: 1; /* Allows proportional shrinking */
     min-width: 13.3rem;
@@ -287,11 +284,10 @@ body.images-page .field {
     height: 100%;
     padding-top: 3rem;
     padding-left: 2.8rem;
-    font-weight: bold;
+    font-weight: 500;
 
-    border: 0px dashed red;
+    border: 0px solid red;
 }
-
 .subtitle2 {
     flex: 1; /* Allows growth if there is extra space */
     flex-shrink: 0;
@@ -299,9 +295,8 @@ body.images-page .field {
     max-width: 35.7rem;
     height: 100%;
 
-    border: 0px dashed red;
+    border: 0px dashed orange;
 }
-
 .subtitle3 {
     flex: 1; /* Allows growth if there is extra space */
     flex-shrink: 2;
@@ -312,9 +307,8 @@ body.images-page .field {
     font-size: .85rem;
     font-weight: bold;
 
-    border: 0px dashed red;
+    border: 0px solid red;
 }
-
 /* Form container */
 .container-form {
     display: flex;
@@ -328,22 +322,19 @@ body.images-page .field {
     align-items: center;
     justify-content: flex-start;
 
-    border: 0px solid blue;
+    border: 0px dashed purple;
 }
-
 label {
     flex: 1;
     min-width: 13rem;
-    max-width: 14.3rem; /* Ensures they do not exceed this size */
+    max-width: 14.3rem;
     height: 100%;
     padding-top: 1rem;
     padding-left: 2.8rem;
     font-size: .8rem;
 
-    border: 0px dashed red;
+    border: 0px dashed orange;
 }
-
-/* Input fields */
 .input-advanced {
     all: unset;
     flex: 1;
@@ -361,7 +352,7 @@ label {
     border: 1px solid var(--gray2);
     box-shadow: inset 0 1px 0 rgba(0,0,0,0.08);
 
-    /*border: 0px solid blue;*/
+    /*border: 0px dashed orange;*/
 }
 .input-advanced:focus {
     box-shadow: inset 0 2px 2px var(--gray2);
@@ -369,7 +360,6 @@ label {
     border-color: var(--blue);
     border-width: 1px;
 }
-
 .todo {
     flex: 1;
     flex-shrink: 2;
@@ -379,8 +369,9 @@ label {
     align-self: center;
     font-size: .7rem;
 
-    border: 0px dashed red;
+    border: 0px solid red;
 }
+
 .wrapper-btn {
     display: flex;
     flex-direction: row;
@@ -390,7 +381,7 @@ label {
     margin-right: .7rem;
     justify-content: flex-end;
 
-    border: 0px dashed red;
+    border: 0px dashed orange;
 }
 .space-before-btn {
     flex: 1;
@@ -400,11 +391,12 @@ label {
     height: 100%;
     padding-top: 2rem;
 
-    border: 0px dashed red; /* Red */
+    border: 0px dashed orange;
+    /*background-color: lightgoldenrodyellow;*/
 }
 
 .btn-advanced {
-    all: unset !important;   /* resetea solo esta clase */
+    all: unset !important; /* Resets styles for this class only */
     cursor: pointer !important;
     font-family: inherit !important;
     margin-right: .7rem;
@@ -418,39 +410,26 @@ label {
     text-align: center !important;
     transition: background-color 0.2s ease !important;
 }
-
 .btn-advanced:hover {
     background-color: var(--darker-blue) !important;
-
     flex: 1;
     flex-shrink: 0;
     min-width: 0;
     max-width: 25rem;
     height: 100%;
-
-    border: 0px dashed red;
 }
+input.btn-advanced:active {
+    background-color: var(--darker-blue) !important;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,0.4) !important;
+}
+
 
 @media (max-width: 1072px) { 
     html, body { /*background-color: lightgoldenrodyellow;*/ } 
-    /* ADVANCED */ 
     .container-subtitles { width: 100%; } 
     .subtitle2 { min-width: 17rem; } 
     .subtitle3 { font-size: 0; } 
     .input-advanced { min-width: 17rem; } 
     .wrapper-btn { min-width: 17rem; } 
-    .todo { font-size: 0rem; } } 
-    
-@media (max-width: 1072px) { 
-    /* INDEX-IMAGES */ 
-    .index-page, .images-page { 
-        flex: 0; 
-        min-width: 0; 
-        margin-left: .7rem; 
-        margin-right: .7rem; } 
-
-    .field { 
-        flex: 1; 
-        flex-shrink: 2; 
-    } 
+    .todo { font-size: 0rem; } 
 }

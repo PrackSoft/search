@@ -1,58 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google</title>
+        <!-- Google Fonts https://fonts.google.com -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+        <!-- External CSS -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Google</title>
-
-    <!-- Google Fonts https://fonts.google.com -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- External CSS -->
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-
-<body class="index-page">
-
-    <!-- Navigation bar -->
-    <div class="nav-bar_index-images">
-        <a href="templates/advanced.html">Advanced</a>
-        <a href="templates/images.html">Images</a>
-    </div>
-
-    <!-- Google's logo -->
-    <div class="logo-centered">
-        <div>
-            <span class="color1 xlarge">G</span>
-            <span class="color2 large">o</span>
-            <span class="color3 large">o</span>
-            <span class="color1 large">g</span>
-            <span class="color4 large">l</span>
-            <span class="color2 large rotation">e</span>
+    <body id="index-page">
+        <!-- Navigation bar -->
+        <div class="nav-bar_index-images">
+            <a href="templates/advanced.html">Advanced</a>
+            <a href="templates/images.html">Images</a>
         </div>
-    </div>
-    
-    <!-- Search form -->
-    <form action="https://www.google.com/search" method="get">
-        <div class="search-container">
-            <!-- Search field -->
-            <input type="text" name="q" class="field">
-
-            <!-- Buttons in the same line -->
-            <div class="buttons-group">
-                <!-- Google Search button -->
-                <input type="submit" value="Google Search" name="btnK">
-
-                <!-- I'm Feeling Lucky button -->
-                <input type="submit" value="I'm Feeling Lucky" name="btnI">
+        <!-- Google's logo ( Adapted from "Finance", CS50x ) -->
+        <div class="logo-centered">
+            <div>
+                <span class="color1 xlarge">G</span>
+                <span class="color2 large">o</span>
+                <span class="color3 large">o</span>
+                <span class="color1 large">g</span>
+                <span class="color4 large">l</span>
+                <span class="color2 large rotation">e</span>
             </div>
         </div>
-    </form>
+        <!-- Search form -->
+        <form action="https://www.google.com/search" method="get">
+            <div class="search-container">
+                <!-- Search field -->
+                <input type="text" name="q" class="field">
+                <!-- Buttons in the same line -->
+                <div class="buttons-group">
+                    <!-- Google Search button -->
+                    <input type="submit" value="Google Search" name="btnK">
+                    <!-- I'm Feeling Lucky button -->
+                    <input type="submit" value="I'm Feeling Lucky" name="btnI">
+                </div>
+            </div>
+        </form>
+    </body>
 
-</body>
 </html>

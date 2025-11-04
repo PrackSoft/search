@@ -1,93 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Advanced Search</title>
+        <!-- Google Fonts https://fonts.google.com -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+        <!-- External CSS -->
+        <link rel="stylesheet" href="../styles.css">
+    </head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Google Advanced Search</title>
-
-    <!-- Google Fonts https://fonts.google.com -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="../styles.css">
-
-</head>
-
-<body>
-    
-    <!-- Nav bar -->
-    <div class="nav-bar_advanced">
-        <a href="../index.html" class="logo-link">
-            <span class="color1 medium">G</span>
-            <span class="color2 regular">o</span>
-            <span class="color3 regular">o</span>
-            <span class="color1 regular">g</span>
-            <span class="color4 regular">l</span>
-            <span class="color2 regular rotation">e</span>
-        </a>
-        <a href="../index.html">Search</a>
-    </div>
-
-    <!-- Title -->
-    <div class="title">
-        <div>
-            <div>&nbsp&nbspAdvanced Search</div>
+    <body>
+        <!-- Nav bar ( Adapted from "Finance", CS50x ) -->
+        <div class="nav-bar_advanced">
+            <a href="../index.html" class="logo-link">
+                <span class="color1 medium">G</span>
+                <span class="color2 regular">o</span>
+                <span class="color3 regular">o</span>
+                <span class="color1 regular">g</span>
+                <span class="color4 regular">l</span>
+                <span class="color2 regular rotation">e</span>
+            </a>
+            <a href="../index.html">Search</a>
         </div>
-    </div>
-
-    <!-- Subtitles -->
-    <div class="container-subtitles">
-        <div class="subtitle1">
-            <span>Find pages with...</span>
-        </div>
-        <div class="subtitle2">
-            <span></span>
-        </div>
-        <div class="subtitle3">
-            <span>To do this in the search box</span>
-        </div>
-    </div>
-
-    <!-- Formulario avanzado -->
-    <form action="https://www.google.com/search" method="get">
-        <div class="container-form">
-            <label for="all-words">all these words:</label>
-            <input type="text" id="all-words" name="q" class="input-advanced" aria-label="Enter words to include">
-            <div class="todo">Type the important words:   tricolor rat terrier</div>
-        </div>
-        <div class="container-form">
-            <label for="exact-phrase">this exact word or phrase:</label>
-            <input type="text" id="exact-phrase" name="q" class="input-advanced" aria-label="Enter words to include">
-            <div class="todo">Put exact words in quotes:   "rat terrier"</div>
-        </div>
-        <div class="container-form">
-            <label for="any-words">any of these words:</label>
-            <input type="text" id="any-words" name="q" class="input-advanced" aria-label="Enter words to include">
-            <div class="todo">Type OR between all the words you want:   miniature OR standard</div>
-        </div>
-        <div class="container-form">
-            <label for="none-words">none of these words:</label>
-            <input type="text" id="none-words" name="q" class="input-advanced" aria-label="Enter words to exclude">
-            <div class="todo">Put a minus sign just before words you don't want:<br>  -rodent, -"Jack Russell"</div>
-        </div>
-        <!-- Advanced Search Button -->
-        <div class="container-form">
-            <label><span></span></label>
-            <div class="wrapper-btn">
-                <input type="submit" value="Advanced Search" name="btnG" class="btn-advanced">
+        <!-- Title -->
+        <div class="title">
+            <div>
+                <div>&nbsp&nbspAdvanced Search</div>
             </div>
-            <div class="todo">
+        </div>
+        <!-- Subtitles -->
+        <div class="container-subtitles">
+            <div class="subtitle1">
+                <span>Find pages with...</span>
+            </div>
+            <div class="subtitle2">
                 <span></span>
             </div>
-            
+            <div class="subtitle3">
+                <span>To do this in the search box</span>
+            </div>
         </div>
-    </form>
+        <!-- Formulario avanzado -->
+        <form action="https://www.google.com/search" method="get">
+            <div class="container-form">
+                <label for="all-words">all these words:</label>
+                <input type="text" id="all-words" name="q" class="input-advanced" aria-label="Enter words to include">
+                <div class="todo">Type the important words:   tricolor rat terrier</div>
+            </div>
+            <div class="container-form">
+                <label for="exact-phrase">this exact word or phrase:</label>
+                <input type="text" id="exact-phrase" name="q" class="input-advanced" aria-label="Enter words to include">
+                <div class="todo">Put exact words in quotes:   "rat terrier"</div>
+            </div>
+            <div class="container-form">
+                <label for="any-words">any of these words:</label>
+                <input type="text" id="any-words" name="q" class="input-advanced" aria-label="Enter words to include">
+                <div class="todo">Type OR between all the words you want:   miniature OR standard</div>
+            </div>
+            <div class="container-form">
+                <label for="none-words">none of these words:</label>
+                <input type="text" id="none-words" name="q" class="input-advanced" aria-label="Enter words to exclude">
+                <div class="todo">Put a minus sign just before words you don't want:<br>  -rodent, -"Jack Russell"</div>
+            </div>
+            <!-- Advanced Search Button -->
+            <div class="container-form">
+                <label><span></span></label>
+                <div class="wrapper-btn">
+                    <input type="submit" value="Advanced Search" name="btnG" class="btn-advanced">
+                </div>
+                <div class="todo">
+                    <span></span>
+                </div>
+            </div>
+        </form>
+    </body>
 
-    
-
-</body>
 </html>
